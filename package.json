@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "start": "vite"
   },
   "keywords": [],
   "author": "",
