@@ -166,7 +166,6 @@ input{
  #typewriter {
   white-space: pre-wrap; /* Keeps line breaks */
   overflow: hidden; /* Hides overflowing content */
-  /* border-right: 2px solid white; Cursor effect */
   animation: blink 0.7s infinite step-end;
 }
 

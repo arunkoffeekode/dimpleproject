@@ -66,21 +66,24 @@ const typewriterTexts = [
    D:/ Closure: Officially finishing the project.`
 ];
 
-typewriterTexts.forEach((text, index) => {
+function startTypewriter(text, elementId) {
   let i = 0;
-  const elementId = `typewriter${index + 1}`;
   function typeWriter() {
     if (i < text.length) {
       document.getElementById(elementId).innerHTML += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 50);
+      setTimeout(typeWriter, 50); // Adjust typing speed here
     }
   }
-  typeWriter(); // Start typing for each slide
-});
+  typeWriter();
+}
 
-
-
+window.onload = function() {
+  typewriterTexts.forEach((text, index) => {
+    const elementId = `typewriter${index + 1}`;
+    startTypewriter(text, elementId);
+  });
+};
 
 // counter start
 
